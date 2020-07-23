@@ -1,0 +1,67 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>hello</title>
+</head>
+<body>
+    <div>
+        hi page
+        <form name="searchFile">
+            <table style="width:40%;">
+
+                <tr>
+                    <th dir="auto">מספר זהות</th>
+                    <th dir="auto">שם משפחה</th>
+                    <th dir="auto">שם פרטי</th>
+                </tr>
+                <tr>
+                    <td><input id="Text1" type="text" /></td>
+                    <td><input id="Text1" type="text" /></td>
+                    <td><input id="Text1" type="text" /></td>
+                </tr>
+
+            </table>
+            <br />
+        </form>
+        <br />
+
+        <input id="Button1" type="button" value="חפש תיק" onclick="BindData()" style="height:50px; width:100px; border-color:black;" />
+
+        <br />
+        <br />
+        <table style="width:100%;">
+            <tr>
+                <th>משרד</th>
+                <th>אגף</th>
+                <th>יחידה</th>
+                <th>מספר זהות</th>
+                <th>שם משפחה</th>
+                <th>שם פרטי</th>
+                <th>כתובת</th>
+                <th>מספר בית</th>
+                <th>שם ישוב</th>
+                <th>הפסקת עבודה</th>
+                <th>תחילת עבודה</th>
+                <th>מספר תיק</th>
+            </tr>
+            
+        </table>
+
+
+        <script language="javascript">
+            @@get()
+            function BindData(employees)
+            {
+
+            }
+        </script>
+    </div>
+</body>
+</html>
