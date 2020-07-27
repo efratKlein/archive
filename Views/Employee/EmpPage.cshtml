@@ -1,4 +1,4 @@
-﻿
+﻿@model MediReports.ViewModel.EmployeeVM
 @{
     Layout = null;
 }
@@ -12,8 +12,7 @@
 </head>
 <body>
     <div>
-        hi page
-        <form name="searchFile">
+        <form id="searchFile">
             <table style="width:40%;">
 
                 <tr>
@@ -22,9 +21,9 @@
                     <th dir="auto">שם פרטי</th>
                 </tr>
                 <tr>
-                    <td><input id="Text1" type="text" /></td>
-                    <td><input id="Text1" type="text" /></td>
-                    <td><input id="Text1" type="text" /></td>
+                    <td><input id="IDTXT" name="IDTXT" type="text" /></td>
+                    <td><input id="FNameTXT" name="FNameTXT" type="text" /></td>
+                    <td><input id="LNameTXT" name="LNameTXT" type="text" /></td>
                 </tr>
 
             </table>
@@ -36,7 +35,7 @@
 
         <br />
         <br />
-        <table style="width:100%;">
+        <table style="width:100%;" id="tblEmp">
             <tr>
                 <th>משרד</th>
                 <th>אגף</th>
@@ -51,14 +50,13 @@
                 <th>תחילת עבודה</th>
                 <th>מספר תיק</th>
             </tr>
-            
+
         </table>
 
 
         <script language="javascript">
             @@get()
-            function BindData(employees)
-            {
+            function BindData(employees) {
 
             }
         </script>

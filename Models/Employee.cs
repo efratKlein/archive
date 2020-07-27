@@ -7,9 +7,7 @@ using System.Web;
 namespace EmpFile.Models
 {
     public class Employee
-    {     ]    
-
-
+    {    
         public int Office { get; set; } //this is for test
         public int Department { get; set; }
         public int Unit { get; set; }
